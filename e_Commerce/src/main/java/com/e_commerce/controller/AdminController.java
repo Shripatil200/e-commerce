@@ -16,4 +16,17 @@ public class AdminController {
 		
 		return "adminHome";
 	}
+	
+	@GetMapping("/hello")
+	public String hello(Model model) {
+		model.addAttribute("message", "HelloWorld");
+		return "HelloWorld";
+		}
+	
+	@GetMapping("/style")
+	public String style() {
+		return "add-css-js-demo";
+	}
+
+
 }
